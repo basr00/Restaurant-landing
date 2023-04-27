@@ -1,3 +1,5 @@
+console.log('JS loaded');
+
 const navBtn = document.querySelector('.nav__btn');
 const navList = document.querySelector('.nav__list');
 const allNavElements = document.querySelectorAll('.nav__element');
@@ -19,7 +21,6 @@ const scrollNav = (e) => {
 
 for (navElement of allNavElements) {
 	navElement.addEventListener('click', () => {
-		console.log(navElement);
 		navList.classList.remove('showNav');
 		logo.classList.remove('newColors');
 	});
@@ -27,5 +28,3 @@ for (navElement of allNavElements) {
 
 window.addEventListener('scroll', scrollNav);
 navBtn.addEventListener('click', showNavigation);
-
-console.log('JS loaded');
