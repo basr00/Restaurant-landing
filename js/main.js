@@ -27,3 +27,5 @@ for (navElement of allNavElements) {
 
 window.addEventListener('scroll', scrollNav);
 navBtn.addEventListener('click', showNavigation);
+
+console.log('JS loaded');
